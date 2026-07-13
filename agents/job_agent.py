@@ -31,7 +31,7 @@ async def main():
             # Create LLM
             llm = ChatGroq(
                   model="llama-3.3-70b-versatile"
-            )
+             )
             # Create agent
             agent = create_agent(
                 model=llm,
@@ -44,7 +44,7 @@ async def main():
                     "messages": [
                         {
                             "role": "user",
-                            "content": "Find Prompt Engineer jobs"
+                            "content": "Find Prompt Engineer jobs in India and provide company, location and application link."
                         }
                     ]
                 }
